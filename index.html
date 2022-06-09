@@ -2,36 +2,64 @@
 <html>
 <body>
 
-<h1 class="title"><b>keolai.com</b></h1>
-<p class="message"><i>UNDER CONSTRUCTION!</i></p>
-<div class="picture">
-<img src="eyes.png" alt="I am looking at you!" class="image">
+<h1 class="title"><a href="index.html" style="color: black;"><b>keolai.com</b></a></h1>
+<div class="body">
+<p class="link"><a href="garden.html" style="text-decoration:underline;"><br>Visit My Garden!</a></p>
+<img class="image" src="./Pictures/me.png">
 </div>
 </body>
 <style>
     body{
-        background-color: black;  
+        background-image: url(./Pictures/clouds.png);
+        background-attachment: fixed;
+        background-repeat: repeat;
+        background-size: 100%;
+        overflow: scroll;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    a:link, a:visited{
+        color: #CDEFC0;
+        text-decoration: none;
+    
+    }
+    .body {
+        color: #CDEFC0;
+        height: calc(90vh - 5vh);
+        background-color: black;
+        width:90%;
+        margin-left:5%;
+        margin-right:5%;
+ 
     }
     .title {
-        color: #CDEFC0;
+        color: black;
         height: 80px;
         text-align: left;
-        padding: 20px;
+        margin: 5px;
+        
+    }
+    .image {
+        height: calc(70vh - 5vh);
+        display: flex;
+        align-items: center;
+        flex-flow: row wrap;
+        float: center;
+        margin: auto;
+        position: relative;
+        justify-content:center;
     }
     
     .message {
-        color: #CDEFC0;
-        height: 20px;
+        height: 30px;
         text-align: center;
-        padding: 20px;
+        padding: 5px;
     }
-    .picture {
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
-    .image {
-        width: 100%;
+    .link {
+       height: 30px;
+       text-align: center;
+       padding: 10px;
     }
 </style>
 </html> 
